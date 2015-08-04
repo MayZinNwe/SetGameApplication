@@ -25,11 +25,11 @@ public class Deck {
     final String[] colors = {"Red", "Purple", "Green"};
     final String[] symbols = {"Squiggle", "Diamond", "Oval"};
     final String[] shadings = {"Solid", "Striped", "Outline"};
-    final String[] numbers = {"One", "Two", "Three"};
+    final int[] numbers = {1, 2, 3};
         for (String shading : shadings) {
             for (String symbol : symbols) {
                 for (String color : colors) {
-                    for (String number : numbers) {
+                    for (int number : numbers) {
                         Card card = new Card(color, symbol, shading, number);
                         gameCards[counter] = card;
                         counter++;
